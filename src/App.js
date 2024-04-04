@@ -4,7 +4,7 @@ import Search from "./components/Search";
 import { NumResults } from "./components/NumResults";
 import { useState } from "react";
 import {tempMovieData} from "./data";
-import ListBox from "./components/ListBox";
+import Box from "./components/Box";
 import WatchedBox from "./components/WatchedBox";
 import MovieList from "./components/MovieList";
 
@@ -18,9 +18,9 @@ function App() {
         <NumResults movies={movies} />
       </NavBar>
       <Main>
-        <ListBox>
+        <Box>
         <MovieList movies={movies} />
-        </ListBox>
+        </Box>
         <WatchedBox />
       </Main>
     </>
