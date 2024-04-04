@@ -10,6 +10,7 @@ import WatchedSummary from "./components/WatchedSummary";
 import WatchedMoviesList from "./components/WatchedMoviesList";
 import { useEffect } from "react";
 import { MovieDetails } from "./components/MovieDetails";
+import {Loader} from "./components/Loader";
 
 const KEY = "3330264f";
 
@@ -60,6 +61,8 @@ function App() {
     fetchMovies();
   }, [query]);
 
+  
+
   return (
     <>
       <NavBar>
@@ -90,10 +93,6 @@ function App() {
       </Main>
     </>
   );
-}
-
-function Loader() {
-  return <p className="loader">Loading ...</p>;
 }
 
 function ErrorMessage({ message }) {
